@@ -13,3 +13,10 @@ CREATE TABLE patients(
     medical_hisory_id INT,
     PRIMARY KEY(id)
     );
+
+    CREATE TABLE treatments(
+      id INT GENERATED ALWAYS AS IDENTITY, 
+      type VARCHAR(255), 
+      name VARCHAR(255), 
+      PRIMARY KEY(id)
+      );
